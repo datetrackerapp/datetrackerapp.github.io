@@ -18,7 +18,7 @@ defaults:
   values:
     title: ''
     description: ''
-    starts_at: ''
+    event_date: ''
     display_image: ''
 email: tylergaugler16@gmail.com
 description: Date Tracker App
