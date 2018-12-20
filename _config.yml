@@ -11,10 +11,20 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+    type: dates
+  values:
+    date: ''
+    display_image: ''
+    title: ''
+    description: ''
+
 email: tylergaugler16@gmail.com
 description: Date Tracker App
-baseurl: 
-url: 
+baseurl:
+url:
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
