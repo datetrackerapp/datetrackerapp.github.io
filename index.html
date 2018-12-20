@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Date Tracker</title>
-</head>
-<body>
-  Hola Mundo!
-</body>
-</html>
+---
+layout: default
+title: My Blog
+---
+
+
+<h1>home page</h1>
+
+{% assign sorted_dates = site.dates | sort: 'event_date' | reverse %}
+{% for date in sorted_dates %}
+  <h2>{{date.title}}</h2>
+  <h3>{{date.event_date}}</h3>
+{% endfor %}
