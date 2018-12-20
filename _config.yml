@@ -2,6 +2,9 @@
 title: Date Tracker
 timezone: America/New_York
 collections:
+  dates:
+    title: Dates
+    output: true
   posts:
     title: Posts
     output: true
