@@ -16,8 +16,6 @@ defaults:
     path: ''
     type: dates
   values:
-    date: ''
-    display_image: ''
     title: ''
     description: ''
 
