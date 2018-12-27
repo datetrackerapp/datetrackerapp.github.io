@@ -2,11 +2,67 @@
 title: My Blog
 layout: default
 ---
+<div class="main-background">
+</div>
+<div class="date-main-content">
+  <div class="has-text-aligned">
+    <h1 class="script">Thanks for the Great Memories!</h1>
+    </div>
 
-<h1>home page</h1>
 
-{% assign sorted_dates = site.dates | sort: 'event_date' | reverse %}
-{% for date in sorted_dates %}
-  <h2>{{date.title}}</h2>
-  <h3>{{date.event_date}}</h3>
-{% endfor %}
+<span style="font-size:80px">🙎🏻‍🐒</span>
+
+
+<div class="dates-container">
+  {% assign sorted_dates = site.dates | sort: 'event_date' | reverse %}
+  {% for date in sorted_dates %}
+     <div class="date-container">
+       <div class="timeline-dot-container">
+         <div class="timeline-dot">
+         </div>
+       </div>
+       <div class="date-content">
+         <h2>{{date.title}}</h2>
+         <h3>{{date.event_date | date: "%m/%d/%Y"}}</h3>
+         <p>Lorem ipsum fea feafe eofke  aefiej. jtea .le  theae dieale diea efaef jfeia tyelr eafd eafkeaf ef efaef feafe foeaf foefaef feaef </p>
+       </div>
+       <div class="timeline-dot-container">
+         <div class="timeline-dot">
+         </div>
+       </div>
+      </div>
+  {% endfor %}
+</div>
+
+</div>
+<!-- <svg style="position: fixed; top: 0; left: 0;z-index: 1;" xmlns="http://www.w3.org/2000/svg" width="1440" height="900"><path d="M566,599L878,639L878,275Z" fill="#eff3f5" stroke="#eff3f5" stroke-width="1.51"/><path d="M878,275L531,251L566,599Z" fill="#faefe9" stroke="#faefe9" stroke-width="1.51"/><path d="M878,639L1227,639L878,275Z" fill="#dfebf3" stroke="#dfebf3" stroke-width="1.51"/><path d="M1227,639L1252,257L878,275Z" fill="#dae4ea" stroke="#dae4ea" stroke-width="1.51"/><path d="M878,275L556,-84L531,251Z" fill="#fbdbcb" stroke="#fbdbcb" stroke-width="1.51"/><path d="M531,251L211,280L566,599Z" fill="#fce4d7" stroke="#fce4d7" stroke-width="1.51"/><path d="M566,599L535,989L878,639Z" fill="#dbe5ec" stroke="#dbe5ec" stroke-width="1.51"/><path d="M878,639L1227,982L1227,639Z" fill="#bad9ea" stroke="#bad9ea" stroke-width="1.51"/><path d="M188,627L535,989L566,599Z" fill="#dfdbd8" stroke="#dfdbd8" stroke-width="1.51"/><path d="M894,-102L556,-84L878,275Z" fill="#f7cdbd" stroke="#f7cdbd" stroke-width="1.51"/><path d="M531,251L207,-74L211,280Z" fill="#fbc6ab" stroke="#fbc6ab" stroke-width="1.51"/><path d="M535,989L905,1011L878,639Z" fill="#c3dcea" stroke="#c3dcea" stroke-width="1.51"/><path d="M1252,257L894,-102L878,275Z" fill="#e9d5cd" stroke="#e9d5cd" stroke-width="1.51"/><path d="M211,280L188,627L566,599Z" fill="#f7dcd0" stroke="#f7dcd0" stroke-width="1.51"/><path d="M905,1011L1227,982L878,639Z" fill="#b3d5e7" stroke="#b3d5e7" stroke-width="1.51"/><path d="M1227,639L1583,626L1252,257Z" fill="#bad6e7" stroke="#bad6e7" stroke-width="1.51"/><path d="M1649,265L1277,-66L1252,257Z" fill="#c3bdc1" stroke="#c3bdc1" stroke-width="1.51"/><path d="M1252,257L1277,-66L894,-102Z" fill="#dcc0b7" stroke="#dcc0b7" stroke-width="1.51"/><path d="M211,280L-166,255L188,627Z" fill="#f7c2ae" stroke="#f7c2ae" stroke-width="1.51"/><path d="M556,-84L207,-74L531,251Z" fill="#fac1a6" stroke="#fac1a6" stroke-width="1.51"/><path d="M568,-428L207,-74L556,-84Z" fill="#ed9f89" stroke="#ed9f89" stroke-width="1.51"/><path d="M188,627L146,1008L535,989Z" fill="#cec3c2" stroke="#cec3c2" stroke-width="1.51"/><path d="M535,989L573,1339L905,1011Z" fill="#a5c0d8" stroke="#a5c0d8" stroke-width="1.51"/><path d="M-190,658L146,1008L188,627Z" fill="#d9b3ab" stroke="#d9b3ab" stroke-width="1.51"/><path d="M1227,982L1583,626L1227,639Z" fill="#a0cae1" stroke="#a0cae1" stroke-width="1.51"/><path d="M211,1366L573,1339L535,989Z" fill="#a5a8c0" stroke="#a5a8c0" stroke-width="1.51"/><path d="M905,1011L904,1352L1227,982Z" fill="#8fb9d9" stroke="#8fb9d9" stroke-width="1.51"/><path d="M894,-102L568,-428L556,-84Z" fill="#eea99a" stroke="#eea99a" stroke-width="1.51"/><path d="M1277,-66L921,-427L894,-102Z" fill="#dca39b" stroke="#dca39b" stroke-width="1.51"/><path d="M921,-427L568,-428L894,-102Z" fill="#e29a92" stroke="#e29a92" stroke-width="1.51"/><path d="M1227,982L1633,1000L1583,626Z" fill="#7db6d6" stroke="#7db6d6" stroke-width="1.51"/><path d="M573,1339L904,1352L905,1011Z" fill="#98b2d5" stroke="#98b2d5" stroke-width="1.51"/><path d="M1583,626L1649,265L1252,257Z" fill="#b2c7da" stroke="#b2c7da" stroke-width="1.51"/><path d="M1277,-66L1236,-464L921,-427Z" fill="#ca8e8c" stroke="#ca8e8c" stroke-width="1.51"/><path d="M207,-74L-166,255L211,280Z" fill="#f5af92" stroke="#f5af92" stroke-width="1.51"/><path d="M-148,-110L-166,255L207,-74Z" fill="#eb9172" stroke="#eb9172" stroke-width="1.51"/><path d="M-166,255L-190,658L188,627Z" fill="#edb4a6" stroke="#edb4a6" stroke-width="1.51"/><path d="M1649,265L1637,-74L1277,-66Z" fill="#b5a5aa" stroke="#b5a5aa" stroke-width="1.51"/><path d="M1611,1330L1633,1000L1227,982Z" fill="#529ac7" stroke="#529ac7" stroke-width="1.51"/><path d="M2000,622L1985,306L1649,265Z" fill="#9aa7cb" stroke="#9aa7cb" stroke-width="1.51"/><path d="M1647,-455L1236,-464L1277,-66Z" fill="#b37d84" stroke="#b37d84" stroke-width="1.51"/><path d="M921,-427L1236,-464L568,-428Z" fill="#d08987" stroke="#d08987" stroke-width="1.51"/><path d="M573,1339L211,1366L904,1352Z" fill="#999fbe" stroke="#999fbe" stroke-width="1.51"/><path d="M146,1008L211,1366L535,989Z" fill="#ada8b5" stroke="#ada8b5" stroke-width="1.51"/><path d="M-188,1353L211,1366L146,1008Z" fill="#a48394" stroke="#a48394" stroke-width="1.51"/><path d="M904,1352L1266,1372L1227,982Z" fill="#7aa5ce" stroke="#7aa5ce" stroke-width="1.51"/><path d="M211,1366L1266,1372L904,1352Z" fill="#8fa2c7" stroke="#8fa2c7" stroke-width="1.51"/><path d="M-559,269L-527,660L-190,658Z" fill="#da8e8a" stroke="#da8e8a" stroke-width="1.51"/><path d="M174,-468L-148,-110L207,-74Z" fill="#e1795f" stroke="#e1795f" stroke-width="1.51"/><path d="M568,-428L174,-468L207,-74Z" fill="#e1836f" stroke="#e1836f" stroke-width="1.51"/><path d="M1236,-464L174,-468L568,-428Z" fill="#d88a84" stroke="#d88a84" stroke-width="1.51"/><path d="M-190,658L-199,1006L146,1008Z" fill="#c59c99" stroke="#c59c99" stroke-width="1.51"/><path d="M1266,1372L1611,1330L1227,982Z" fill="#5d97c6" stroke="#5d97c6" stroke-width="1.51"/><path d="M1649,265L2012,-64L1637,-74Z" fill="#a790a0" stroke="#a790a0" stroke-width="1.51"/><path d="M2000,622L1649,265L1583,626Z" fill="#99b4d6" stroke="#99b4d6" stroke-width="1.51"/><path d="M2000,622L1583,626L1956,983Z" fill="#799fcc" stroke="#799fcc" stroke-width="1.51"/><path d="M1956,983L1583,626L1633,1000Z" fill="#6aa1cc" stroke="#6aa1cc" stroke-width="1.51"/><path d="M1998,-438L1647,-455L1637,-74Z" fill="#975f76" stroke="#975f76" stroke-width="1.51"/><path d="M1637,-74L1647,-455L1277,-66Z" fill="#ad828a" stroke="#ad828a" stroke-width="1.51"/><path d="M-190,658L-527,660L-199,1006Z" fill="#c98d8c" stroke="#c98d8c" stroke-width="1.51"/><path d="M-559,269L-190,658L-166,255Z" fill="#e6998d" stroke="#e6998d" stroke-width="1.51"/><path d="M-519,1336L-188,1353L-199,1006Z" fill="#976076" stroke="#976076" stroke-width="1.51"/><path d="M-199,1006L-188,1353L146,1008Z" fill="#a7818c" stroke="#a7818c" stroke-width="1.51"/><path d="M-578,-116L-559,269L-166,255Z" fill="#da7666" stroke="#da7666" stroke-width="1.51"/><path d="M-578,-116L-166,255L-148,-110Z" fill="#dc725c" stroke="#dc725c" stroke-width="1.51"/><path d="M1961,1360L1956,983L1633,1000Z" fill="#347cb8" stroke="#347cb8" stroke-width="1.51"/><path d="M1236,-464L-191,-484L174,-468Z" fill="#d27b70" stroke="#d27b70" stroke-width="1.51"/><path d="M174,-468L-191,-484L-148,-110Z" fill="#ce5648" stroke="#ce5648" stroke-width="1.51"/><path d="M2000,622L2012,-64L1985,306Z" fill="#9593af" stroke="#9593af" stroke-width="1.51"/><path d="M1985,306L2012,-64L1649,265Z" fill="#a095af" stroke="#a095af" stroke-width="1.51"/><path d="M-527,660L-556,998L-199,1006Z" fill="#b67b7f" stroke="#b67b7f" stroke-width="1.51"/><path d="M-559,269L-556,998L-527,660Z" fill="#c08284" stroke="#c08284" stroke-width="1.51"/><path d="M-559,269L-578,-116L-556,998Z" fill="#cc8480" stroke="#cc8480" stroke-width="1.51"/><path d="M-524,-421L-578,-116L-148,-110Z" fill="#c4403b" stroke="#c4403b" stroke-width="1.51"/><path d="M1611,1330L1961,1360L1633,1000Z" fill="#3279b6" stroke="#3279b6" stroke-width="1.51"/><path d="M1956,983L1961,1360L2000,622Z" fill="#487db1" stroke="#487db1" stroke-width="1.51"/><path d="M1266,1372L1961,1360L1611,1330Z" fill="#3075af" stroke="#3075af" stroke-width="1.51"/><path d="M-556,998L-519,1336L-199,1006Z" fill="#996273" stroke="#996273" stroke-width="1.51"/><path d="M-191,-484L-524,-421L-148,-110Z" fill="#c23c39" stroke="#c23c39" stroke-width="1.51"/><path d="M2012,-64L1998,-438L1637,-74Z" fill="#98657c" stroke="#98657c" stroke-width="1.51"/></svg> -->
+
+
+
+
+
+
+
+
+<!-- <svg viewBox="0 0 2 1" xmlns="http://www.w3.org/2000/svg" style="position: fixed; top: 0; left: 0;z-index: 1;">
+<rect width="2" height="1" fill="#7a7"/>
+<defs>
+<linearGradient id="f" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7a7" offset="0"/>
+<stop stop-color="#4fd" offset="1"/>
+</linearGradient>
+<linearGradient id="e" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+<stop stop-color="#cf8" stop-opacity="0" offset="0"/>
+<stop stop-color="#cf8" offset="1"/>
+</linearGradient>
+<linearGradient id="d" x2="2" y2="2" gradientUnits="userSpaceOnUse">
+<stop stop-color="#cf8" stop-opacity="0" offset="0"/>
+<stop stop-color="#cf8" offset="1"/>
+</linearGradient>
+</defs>
+<rect width="2" height="1" fill="url(#f)"/>
+<g fill-opacity=".5">
+<polygon class="my-polygon" points="0 1 0 0 2 0" fill="url(#e)"/>
+<polygon points="2 1 2 0 0 0" fill="url(#d)"/>
+</g>
+</svg> -->
