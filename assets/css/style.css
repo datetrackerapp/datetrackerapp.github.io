@@ -123,6 +123,12 @@ background-size: cover;
 .date-container:last-child .timeline-dot::after{
   display: none;
 }
+.date-container:first-child .left-container .timeline-dot{
+  display: none;
+}
+.date-container:last-child .left-container .timeline-dot{
+  display: none;
+}
 path{
   transition: 0.5s all;
 }
