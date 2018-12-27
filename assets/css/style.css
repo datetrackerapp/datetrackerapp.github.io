@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Arapey|Roboto');
 
 body{
   margin: 0;
@@ -18,8 +18,11 @@ background-size: contain;
 .has-text-aligned{
   text-align: center;
 }
-.script{
-  font-family: 'Bilbo Swash Caps', cursive;
+.header-font{
+  font-family: "Arapey script=all rev=2", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
 }
 .main-background
 {
@@ -43,7 +46,7 @@ background-size: cover;
   font-size: 32px;
   text-align: center;
   display: inline-block;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
   padding: 10px 20px;
 }
@@ -100,6 +103,25 @@ background-size: cover;
   background-color: blue;
   bottom: 25px;
   left: 50%;
+}
+
+.date-container:nth-child(even) .left-container .timeline-dot::before{
+  display: none;
+}
+.date-container:nth-child(even) .right-container .timeline-dot::after{
+  display: none;
+}
+.date-container:nth-child(odd) .right-container .timeline-dot::before{
+  display: none;
+}
+.date-container:nth-child(odd) .left-container .timeline-dot::after{
+  display: none;
+}
+.date-container:first-child .timeline-dot::before{
+  display: none;
+}
+.date-container:last-child .timeline-dot::after{
+  display: none;
 }
 path{
   transition: 0.5s all;
