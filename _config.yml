@@ -21,8 +21,8 @@ defaults:
     display_image: ''
 email: tylergaugler16@gmail.com
 description: Date Tracker App
-baseurl:
-url:
+baseurl: 
+url: 
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
