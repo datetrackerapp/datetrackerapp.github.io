@@ -48,6 +48,9 @@ background-size: cover;
     background-repeat: repeat-y;
     background-size: contain;
     padding-top: 50px;
+    -webkit-box-shadow: 9px 9px 5px -9px rgba(0,0,0,0.53);
+    -moz-box-shadow: 9px 9px 5px -9px rgba(0,0,0,0.53);
+    box-shadow: 9px 9px 5px -9px rgba(0,0,0,0.53);
 }
 .date-main-content h1
 {
@@ -154,10 +157,12 @@ path{
 }
 .i-love-you h1{
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 75px;
+  line-height: 75px;
+  height: 75px;
   font-weight: 500;
   color: #C9DAEA;
 }
