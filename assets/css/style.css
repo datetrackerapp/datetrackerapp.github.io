@@ -78,6 +78,7 @@ background-size: cover;
   align-items: center;
   width: 100%;
   height: 100vh;
+  margin-bottom: 150px;
 }
 .date-content{
   width: 80vw;
@@ -101,7 +102,7 @@ background-size: cover;
 }
 .timeline-dot::after{
   content: '';
-  height: 50vh;
+  height: calc(50vh + 150px) ;
   position: absolute;
   width: 1px;
   background-color: #D8DBE2;
@@ -110,7 +111,7 @@ background-size: cover;
 }
 .timeline-dot::before{
   content: '';
-  height: 50vh;
+  height: calc(50vh + 150px) ;
   position: absolute;
   width: 1px;
   background-color: #D8DBE2;
