@@ -19,13 +19,22 @@ layout: default
   {% for date in sorted_dates %}
      <div class="date-container">
        {% assign mod = forloop.index | modulo: 2 %}
+
        {% if forloop.last == true and mod == 1 %}
          {% assign class = 'last-odd' %}
        {% elsif forloop.last == true %}
-         {% assign class = 'last-event' %}
+         {% assign class = 'last-even' %}
        {% else %}
          {% assign class = '' %}
        {% endif %}
+
+       {% if  mod == 0 %}
+         {% assign fade-class = 'fade-right' %}
+       {% else %}
+         {% assign fade-class = 'fade-left' %}
+       {% endif %}
+
+
        <div class="timeline-dot-container left-container {{class}}">
          <div class="timeline-dot">
          </div>
@@ -33,10 +42,10 @@ layout: default
 
 
        <div class="date-content date-{{ forloop.index }}">
-         <h2 class="header-font"data-aos-anchor=".date-{{ forloop.index }}" data-aos="fade-left" data-aos-duration="800">{{date.title}}</h2>
-         <h3 class="date-header">{{date.event_date | date: "%m/%d/%Y"}}</h3>
-         <p>{{ date.content }} </p>
-         <img style="max-height: 300px;" src="{{date.display_image}}"></img>
+         <h2 class="header-font" data-aos-anchor=".date-{{ forloop.index }}" data-aos-delay="300" data-aos="{{fade-class}}" data-aos-duration="1000">{{date.title}}</h2>
+         <h3 class="date-header" data-aos-anchor=".date-{{ forloop.index }}" data-aos="{{fade-class}}" data-aos-duration="600" data-aos-delay="1900" data-aos-easing="ease-in-out">{{date.event_date | date: "%m/%d/%Y"}}</h3>
+         <div data-aos-anchor=".date-{{ forloop.index }}" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1300" class="paragraph"> {{ date.content }} </div>
+         <img style="max-height: 300px;" data-aos-anchor=".date-{{ forloop.index }}" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1300" src="{{date.display_image}}"></img>
        </div>
        <div class="timeline-dot-container right-container {{class}}">
          <div class="timeline-dot">
