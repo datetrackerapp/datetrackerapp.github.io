@@ -104,7 +104,7 @@ background-size: cover;
   content: '';
   height: calc(50vh + 150px) ;
   position: absolute;
-  width: 1px;
+  width: 2px;
   background-color: #D8DBE2;
   top: 25px;
   left: 50%;
@@ -113,7 +113,7 @@ background-size: cover;
   content: '';
   height: calc(50vh + 150px) ;
   position: absolute;
-  width: 1px;
+  width: 2px;
   background-color: #D8DBE2;
   bottom: 25px;
   left: 50%;
@@ -131,18 +131,24 @@ background-size: cover;
 .date-container:nth-child(odd) .left-container .timeline-dot::after{
   display: none;
 }
-.date-container:first-child .timeline-dot::before{
-  display: none;
-}
-.date-container:last-child .timeline-dot::after{
-  display: none;
-}
+
+
 .date-container:first-child .left-container .timeline-dot{
   display: none;
 }
-.date-container:last-child .left-container .timeline-dot{
+
+.date-container:last-child .timeline-dot::after{
   display: none;
 }
+.date-container:last-child .right-container.last-odd .timeline-dot{
+  display: none;
+}
+.date-container:last-child .left-container.last-even .timeline-dot{
+  display: none;
+}
+/* .date-container:first-child .timeline-dot::before{
+  display: none;
+} */
 
 .date-container .date-header{
   color: #C9BCA7;

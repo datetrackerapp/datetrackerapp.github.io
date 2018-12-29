@@ -6,3 +6,6 @@ https://trianglify.io/
 
 
 https://www.freepik.com/index.php?goto=74&idfoto=3065296
+
+
+https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
