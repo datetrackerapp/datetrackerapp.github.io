@@ -146,13 +146,15 @@ background-size: cover;
 .date-container:last-child .left-container.last-even .timeline-dot{
   display: none;
 }
-/* .date-container:first-child .timeline-dot::before{
-  display: none;
-} */
 
+
+.date-container h2{
+  margin: 0px 0px 5px 0px;
+}
 .date-container .date-header{
   color: #C9BCA7;
   font-size: 14px;
+  margin: 0;
 }
 path{
   transition: 0.5s all;
