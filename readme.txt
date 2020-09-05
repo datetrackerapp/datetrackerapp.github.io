@@ -1,3 +1,8 @@
+# Date Tracker
+[View Here](https://datetrackerapp.github.io/)
+[Add dates here](https://manage.siteleaf.com/sites/5c1b15d1faaa6649b14c32cf/pages)
+
+## Resources to look into
 https://stackoverflow.com/questions/1625681/dynamically-change-color-to-lighter-or-darker-by-percentage-css-javascript
 
 
